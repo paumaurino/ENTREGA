@@ -1,0 +1,13 @@
+//Pantalla extra grande
+//Pantalla mobile
+@media (max-width: 768px) {
+    
+    .header{
+        background-size: cover; 
+    }
+    .mainfrase{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+

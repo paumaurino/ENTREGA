@@ -1,0 +1,64 @@
+.grid{
+    display: grid;
+    grid-template-areas: "tabla tabla info"
+                        "maps maps maps";
+
+     grid-column-gap: 2rem;
+     grid-row-gap: 2rem;
+     margin: 2rem;
+}
+.tabla{
+    grid-area: tabla;
+    padding: 2rem;
+    background-color: black;
+    border-radius: 8px;
+    border-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+
+}
+.info{
+    grid-area: info;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+
+}
+.maps{
+    grid-area: maps;
+
+}
+
+.body{
+    background: white;
+}
+
+#contactnombre{
+    width: 400px;
+    height: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+#contactmail{
+    width: 400px;
+    height: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+#contacttelefono{
+    width: 400px;
+    height: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+#contactmensaje{
+    width: 400px;
+    height: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+#contactsubmit{
+    background: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
