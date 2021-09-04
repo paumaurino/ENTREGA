@@ -1,0 +1,68 @@
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+.body{
+  min-height: 100vh;
+ width: 100%;
+ display: grid;
+  background: black;
+background-position: center;
+background-size: cover;
+}
+
+.servicios{
+align-content: center;
+
+}
+
+.container{
+position: relative;
+  margin: 2rem 2rem 2rem 2rem;
+  overflow: hidden;
+  width: 520px;
+  height: 350px;
+  background: white;
+  border-radius: 10px;
+  border-color: white;
+  
+}
+
+.image {
+  width: 290px;
+display: flex;
+justify-content: center;
+}
+
+.lainfo {
+  position: absolute;
+  width: 40%;
+  top: 10%;
+  left: 60%;
+}
+
+.button{
+    background: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    padding: 10px 10px 10px 10px;
+    outline: 0;
+    margin: -1px;
+    border-radius: 2px;
+    border-color: white;
+    border-style: outset;
+
+    
+}
+
+.but{
+    width: 80%;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border-style: none;
+}

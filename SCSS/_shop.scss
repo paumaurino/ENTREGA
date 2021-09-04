@@ -1,0 +1,24 @@
+.seleccajas{
+    display: flex;
+    font-family:Montserrat, sans-serif;
+    font-size: 2.5rem;
+    justify-content: center;
+    div{
+        border: black solid;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: 2rem 2rem 2rem 2rem;
+    }
+
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 2rem 2rem 2rem;
+    div{
+        margin: 2rem 2rem 2rem 2rem;
+    }
+
+}
+
