@@ -1,7 +1,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url(IMAGENES/fondo1280.jpg);
+    background-image: url("../IMAGENES/fondo1280.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -9,99 +9,63 @@
   
   .mainfrase{
     font-family: Montserrat, sans-serif;
-      font-size: 36px;
+      font-size: 20px;
       display: flex;
       color: #FFFFFF;
-      
-  }
-  
-  .mainfrase p {
-    position: absolute;
+      p{
+        position: absolute;
       text-align: left;
       margin: 8rem;
       width: 40%;
-  }
-  
-  /*parte 3*/
-  .section3{
-  
-      font-family:Montserrat, sans-serif;
-  }
-  
-  .section3__h2 {
-      font-size: 2.5rem;
-      margin: 2rem;
-      color: #000000;
-      padding: 1rem;
-      margin-left: 18rem;
+      }
       
   }
   
-  .parte3 {
+  
+  /*Productos mas elegidos*/
+  .Elegidos{
+  
+      font-family:Montserrat, sans-serif;
+      h2{
+        font-size: 2.5rem;
+        margin: 2rem;
+        color: #000000;
+        padding: 1rem;
+        text-align: center;       
+    }
+  }
+  .Cupcakeselegidos {
       font-size: 16px;
       height: 400px;
       display: flex;
       justify-content: center;
+
+      div{
+        padding: 2rem 2rem 2rem 2rem;
+      background: #F8F8F6;
+      margin: 2rem 2rem 2rem 2rem;
+      overflow: hidden;
+      border-radius: 2rem;
+      }
+      div:hover{
+        transform: scale(1.1);
+      }
       
   }
-  
-  
-    .parte3__div4 {
-      padding: 2rem 2rem 2rem 2rem;
-      background: #F8F8F6;
-      margin: 2rem 2rem 2rem 2rem;
-      overflow: hidden;
-    }
-    
-    .parte3__div4 img {
-      transition: transform .5s ease;
-    }
-    
-    .parte3__div4:hover img {
-      transform: scale(1.2);
-    }
-  
-    .parte3__div5 {
-      padding: 2rem 2rem 2rem 2rem;
-      background: #F8F8F6;
-      margin: 2rem 2rem 2rem 2rem;
-      overflow: hidden;
-  }
-      .parte3__div5 img {
-      transition: transform .5s ease;
-    }
-    
-      .parte3__div5:hover img {
-      transform: scale(1.2);
-    }
-  
-    .parte3__div6{
-      padding: 2rem 2rem 2rem 2rem;
-      background: #F8F8F6;
-      margin: 2rem 2rem 2rem 2rem;
-      overflow: hidden;
-  
-  }
-      .parte3__div6 img {
-      transition: transform .5s ease;
-    }
-    
-      .parte3__div6:hover img {
-      transform: scale(1.2);
-    }
-  /*parte 4*/
-  .section4{
+
+  /*Arma tu box*/
+  .Opcionboxes{
       font-family:Montserrat, sans-serif;
-  }
-  .section4__h2{
-      font-size: 2.5rem;
+      h2{
+        font-size: 2.5rem;
       margin: 2rem;
       color: #000000;
       padding: 1rem;
-      margin-left: 18rem;
-  
+      text-align: center; 
+      }
   }
-  .parte4{
+
+  .Boxes{
       font-size: 16px;
       height: 400px;
       display: flex;
@@ -109,13 +73,13 @@
       background:#F8F8F6;
       margin: 2rem 18rem 10rem 18rem;
   }
-  .parte4__img1{
+  .boxes__6{
      justify-content: flex-start;
      padding: 2rem 2rem 2rem 2rem;
       margin: 2rem 2rem 2rem 2rem;
       
   }
-  .parte4__img2{
+  .boxes__12{
     justify-content: flex-end;
     padding: 2rem 2rem 2rem 2rem;
       margin: 2rem 2rem 2rem 2rem;
