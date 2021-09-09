@@ -101,6 +101,17 @@
   height: 350px;
   width: 520px; }
 
+<<<<<<< HEAD
+=======
+@media screen {
+  max-width: 425px;
+  .container {
+    height: 600px;
+    width: 400px; }
+  img {
+    size: 50%; } }
+
+>>>>>>> ec097e40ac9e1fd0ecd411f812b62cb90c578c3a
 .qsomos {
   text-align: center;
   min-height: 100vh;
