@@ -2,6 +2,7 @@
 .container{
   display: flex;
   align-items: center;
+  margin:0 auto;
   margin-top: 2rem;
   background-color: pink;
   border-color:blue;
@@ -11,12 +12,3 @@
 
 }
 
-@media{ max-width:425px;
-  .container{
-    flex-direction: column;
-  }
-  img{
-    size: 50%;
-  }
-  
-}
