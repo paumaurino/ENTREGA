@@ -63,10 +63,7 @@
 
       @include respond(small) {
         flex-direction: column;
-        height: auto;
-        
-  
-    }
+        height: auto; }
 
       div{
         padding: 2rem 2rem 2rem 2rem;
@@ -76,8 +73,7 @@
       border-radius: 2rem;
     
       div:hover{
-        transform: scale(1.1);
-      }
+        transform: scale(1.1);}
     } 
   }
 
