@@ -1,3 +1,12 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == medium {
+    @media (max-width: 768px) { @content };
+  }
+  @if $breakpoint == small {
+    @media (max-width: 426px) { @content };
+  }
+}
+
 .header{
     min-height: 100vh;
     width: 100%;
@@ -5,6 +14,13 @@
     background-position: center;
     background-size: cover;
     position: relative;
+
+    @include respond(small) {
+      background-image: none;
+      height: 20rem;
+      
+
+  }
   }
   
   .mainfrase{
@@ -18,6 +34,11 @@
       margin: 8rem;
       width: 40%;
       }
+      @include respond(small) {
+        display: none;
+        
+  
+    }
       
   }
   
@@ -40,48 +61,69 @@
       display: flex;
       justify-content: center;
 
+      @include respond(small) {
+        flex-direction: column;
+        height: auto;
+        
+  
+    }
+
       div{
         padding: 2rem 2rem 2rem 2rem;
       background: #F8F8F6;
       margin: 2rem 2rem 2rem 2rem;
       overflow: hidden;
       border-radius: 2rem;
-      }
+    
       div:hover{
         transform: scale(1.1);
       }
-      
+    } 
   }
 
   /*Arma tu box*/
-  .Opcionboxes{
-      font-family:Montserrat, sans-serif;
-      h2{
-        font-size: 2.5rem;
-      margin: 2rem;
+  
+  h2{
+      font-family:Montserrat, sans-serif;  
+      font-size: 2.5rem;
       color: #000000;
       padding: 1rem;
       text-align: center; 
       }
-  }
 
-  .Boxes{
-      font-size: 16px;
-      height: 400px;
+.seleccajas{
       display: flex;
+      font-family:Montserrat, sans-serif;
+      font-size: 4rem;
       justify-content: center;
-      background:#F8F8F6;
-      margin: 2rem 18rem 10rem 18rem;
-  }
-  .boxes__6{
-     justify-content: flex-start;
-     padding: 2rem 2rem 2rem 2rem;
+      button{
+            border: black solid;
+            border-radius: 0.6rem;
+        padding: 4rem 4rem 4rem 4rem;
+        margin: 2rem 2rem 2rem 2rem;
+        background-color: white;
+        font-family:Montserrat, sans-serif;
+        font-size: 2rem;
+        @include respond(small) {
+          padding: 2rem 2rem 2rem 2rem;
+          font-size: 1rem; }
+
+        }
+      button:hover{
+        background-color:lightgrey;
+
+      }
+    
+    }
+
+  .armatubox{
+    margin: 2rem 18rem 10rem 18rem;
+    @include respond(small) {
       margin: 2rem 2rem 2rem 2rem;
+     
       
   }
-  .boxes__12{
-    justify-content: flex-end;
-    padding: 2rem 2rem 2rem 2rem;
-      margin: 2rem 2rem 2rem 2rem;
   }
+  
+
   

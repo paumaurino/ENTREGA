@@ -1,11 +1,28 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == medium {
+      @media (max-width: 768px) { @content };
+    }
+    @if $breakpoint == small {
+      @media (max-width: 426px) { @content };
+    }
+  }
+
 .grid{
     display: grid;
     grid-template-areas: "tabla tabla info"
-                        "maps maps maps";
+                        "pickup pickup pickup"
+                        ;
 
      grid-column-gap: 2rem;
      grid-row-gap: 2rem;
      margin: 2rem;
+
+     @include respond(small) {
+        grid-template-areas: "info"
+                             "tabla"
+                              "pickup";  
+
+    }
 }
 .tabla{
     grid-area: tabla;
@@ -16,6 +33,11 @@
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     color: white;
+    @include respond(small) {
+        display: inline-block; 
+        
+    }
+
 
 }
 .info{
@@ -38,27 +60,63 @@
     height: 30px;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
+    @include respond(small) {
+        width: 300px;   
+        
+    }
 }
 #contactmail{
     width: 400px;
     height: 30px;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
+    @include respond(small) {
+        width: 300px;   
+        
+    }
 }
 #contacttelefono{
     width: 400px;
     height: 30px;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
+    @include respond(small) {
+        width: 300px;
+        justify-content: center;   
+        
+    }
 }
 #contactmensaje{
     width: 400px;
     height: 100px;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
+    @include respond(small) {
+        width: 300px;   
+        
+    }
 }
 #contactsubmit{
     background: white;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
+    @include respond(small) {
+        width: 300px; 
+        height: 1.5rem;  
+        
+    }
+}
+
+.pickup{
+    h2{
+        text-align: center;
+    }
+
+    @include respond(small) {
+        
+       iframe{
+           width: 300px;
+       }
+        
+    }
 }

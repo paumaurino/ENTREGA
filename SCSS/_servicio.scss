@@ -1,14 +1,36 @@
-
+@mixin respond($breakpoint) {
+  @if $breakpoint == medium {
+    @media (max-width: 768px) { @content };
+  }
+  @if $breakpoint == small {
+    @media (max-width: 426px) { @content };
+  }
+}
 .container{
   display: flex;
   align-items: center;
   margin:0 auto;
   margin-top: 2rem;
   background-color: pink;
-  border-color:blue;
   border-radius: 10px;
   height: 350px;
   width: 520px;
+  font-family: "Montserrat", sans-serif;
 
+  button{
+    background-color: black;
+    color: white;
+    border-radius: 0.2rem;
+    padding:0.2rem ;
+
+  }
+  @include respond(small) {
+    flex-direction: column;
+    height:auto;
+    width: auto;
+    margin: 1rem 1rem 1rem 1rem;
+    padding:  1rem 1rem 1rem 1rem;
+
+}
 }
 

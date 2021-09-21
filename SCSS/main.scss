@@ -8,9 +8,25 @@
 @import 'quienessomos';
 @import 'cursos';
 @import 'contacto';
-@import 'responsive';
+
 
 /*Barra horizontal */
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == medium {
+      @media (max-width: 768px) { @content };
+    }
+    @if $breakpoint == small {
+      @media (max-width: 426px) { @content };
+    }
+  }
+  
+
+  html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
 
 
 .nav{
@@ -18,6 +34,13 @@
     padding: 2rem;
     display: flex;
     justify-content: space-around;
+
+    @include respond(small) {
+        flex-direction: column;
+        height: 26rem;
+
+    }
+
     
 }
 
@@ -27,20 +50,40 @@
     font-family: "Funkturm", sans-serif;
     font-size: 40px;
     justify-content: flex-start;
+    @include respond(small) {
+       font-size: 5rem;
+
+    }
 }
 
 nav{
     ul{
         list-style-type: none;
-        display: inline 
+        display: inline  }
 
-    }
     .menunavegacion{
         margin: 1rem;
+        @include respond(small) {
+           margin: 1rem 1rem 1rem 0rem ;
+           
+        
+        }
+    
+    
     }
+
+
+
     li{
         display: inline;
   padding-right: 0.5em;
+  @include respond(small) {
+    display: block;
+    margin-top: 0.5em;
+    align-self: center;
+   
+
+}
   
     }
     a{
@@ -48,6 +91,12 @@ nav{
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     text-decoration: none;
+    @include respond(small) {
+        font-size: 1.6rem;
+        
+     
+     }
+    
     }
     a:hover{
         color:gray;
@@ -55,9 +104,7 @@ nav{
     }
 }
 
-.hamburger {
-    display: none;
-}
+
 
 .footer{
     background-color: #000000;
@@ -66,10 +113,33 @@ nav{
     font-family: "Montserrat", sans-serif;
     padding: 2rem 2rem 2rem 2rem;
     color: #FFFFFF;
+    @include respond(small) {
+        flex-direction: column;
+        margin: 0rem;
 
+    }
+
+}
+.footer__newsletter{
+    @include respond(small) {
+        padding: 1rem;
+        background-color: white;
+        border-radius: 0.2rem;
+
+    }
 }
 .footer__newsletter p{
     margin:4rem 4rem 2rem 0rem;
+    @include respond(small) {
+        margin: auto;
+        color: black;
+
+    }
+   
+}
+.footer__newsletter button{
+    font-family: "Montserrat", sans-serif;
+   
 }
 .footer__otros {
     margin:4rem 4rem 2rem 0rem;
@@ -77,7 +147,14 @@ nav{
         color:gray;
         transform: scale(1.1)
     }
+
+    @include respond(small) {
+        align-self: center;
+        margin:2rem; 
+
+    }
 }
+
 fieldset{
     border-radius: 2px;
     background-color: white;
